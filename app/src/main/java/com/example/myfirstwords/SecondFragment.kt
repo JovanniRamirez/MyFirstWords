@@ -40,14 +40,8 @@ class SecondFragment : Fragment() {
         binding.btnMainToWords.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.action_secondFragment_to_fourthFragment)
         }
-        binding.btnMainToCustom.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_secondFragment_to_fifthFragment)
-        }
-        binding.btnMainToSettings.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_secondFragment_to_sixthFragment)
-        }
-        binding.btnMainToExit.setOnClickListener {
-            requireActivity().finish()
+        binding.btnMainToNumbers.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_secondFragment_to_seventhFragment)
         }
     }
 }

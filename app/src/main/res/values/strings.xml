@@ -5,4 +5,9 @@
     <string name="exit">Exit</string>
     <string name="start">Start</string>
     <string name="my_first_words">My First Words</string>
+    <string name="add">add</string>
+    <string name="find">find</string>
+    <string name="delete">delete</string>
+    <string name="Word">Word</string>
+    <string name="word">Word:</string>
 </resources>

@@ -20,35 +20,34 @@
         tools:layout="@layout/fragment_second" >
         <action
             android:id="@+id/action_secondFragment_to_thirdFragment"
-            app:destination="@id/thirdFragment" />
+            app:destination="@id/thirdFragmentABC" />
         <action
             android:id="@+id/action_secondFragment_to_fourthFragment"
-            app:destination="@id/fourthFragment" />
+            app:destination="@id/fourthFragmentWords" />
         <action
-            android:id="@+id/action_secondFragment_to_fifthFragment"
-            app:destination="@id/fifthFragment" />
-        <action
-            android:id="@+id/action_secondFragment_to_sixthFragment"
-            app:destination="@id/sixthFragment" />
+            android:id="@+id/action_secondFragment_to_seventhFragment"
+            app:destination="@id/seventhFragmentNumbers" />
     </fragment>
     <fragment
-        android:id="@+id/thirdFragment"
+        android:id="@+id/thirdFragmentABC"
         android:name="com.example.myfirstwords.ThirdFragment"
         android:label="fragment_third"
-        tools:layout="@layout/fragment_third" />
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_thirdFragment_to_seventhFragment"
+            app:destination="@id/seventhFragmentNumbers" />
+        <action
+            android:id="@+id/action_thirdFragmentABC_to_fourthFragmentWords"
+            app:destination="@id/fourthFragmentWords" />
+    </fragment>
     <fragment
-        android:id="@+id/fourthFragment"
+        android:id="@+id/fourthFragmentWords"
         android:name="com.example.myfirstwords.FourthFragment"
         android:label="fragment_fourth"
         tools:layout="@layout/fragment_fourth" />
     <fragment
-        android:id="@+id/fifthFragment"
-        android:name="com.example.myfirstwords.FifthFragment"
-        android:label="fragment_fifth"
-        tools:layout="@layout/fragment_fifth" />
-    <fragment
-        android:id="@+id/sixthFragment"
-        android:name="com.example.myfirstwords.SixthFragment"
-        android:label="fragment_sixth"
-        tools:layout="@layout/fragment_sixth" />
+        android:id="@+id/seventhFragmentNumbers"
+        android:name="com.example.myfirstwords.SeventhFragment"
+        android:label="fragment_seventh"
+        tools:layout="@layout/fragment_seventh" />
 </navigation>
